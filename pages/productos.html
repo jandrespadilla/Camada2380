@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>       
+    <title>MercaditoChic - Productos</title>
+</head>
+<body>
+    <!-- Cabecera / Menu-->
+    <div class="container-fluid header">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">MercaditoChic</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse menu__bg" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">  <a class="nav-link text-dark" href="../index.html">Inicio</a> </li>
+            <li class="nav-item">  <a class="nav-link text-dark"  href="./noticias.html">Noticias</a> </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link text-dark" href="./productos.html" id="navbarDarkDropdownMenuLink" >Productos</a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="./productos/tienda.html?cat=18">Deco</a></li>
+                <li><a class="dropdown-item" href="./productos/tienda.html?cat=20">Sustentable</a></li>
+                <li><a class="dropdown-item" href="./productos/tienda.html?cat=19">Gourmet</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">  <a class="nav-link text-dark"  href="./contactanos.html">Contactanos</a> </li>
+          </ul>
+          <form class="d-flex itemMenuBuscador">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">Buscar</button>
+          </form>
+        </div>
+      </nav>  
+    </div>
+    <!-- Contenido -->
+    <div class="mainCentrado espaciado container-fluid">
+      <div class="divTitulo"><h1 class="tituloPagina">Productos</h1></div>
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="../multimedia/img/sustentable.jpg" class="h-50 w-100" alt="Mercado Sustentable">
+          <div class="carousel-caption d-none d-md-block">
+            <a class="textDecoration__none textDecoration__fontRoboto " href="./productos/tienda.html?cat=20"><h5 class="text-dark fw-bolder fs-1">Sustentables</h5></a>
+            <p class="text-dark fs-2 fw-bolder">Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img  src="../multimedia/img/deco.jpg" class="d-block h-50 w-100" alt="Mercado Deco">
+          <div class="carousel-caption d-none d-md-block">
+            <a class="textDecoration__none textDecoration__fontRoboto " href="./productos/tienda.html?cat=18"><h5 class="text-light fw-bolder fs-1">Deco</h5></a>
+            
+            <p class="text-light fs-2 fw-bolder">Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../multimedia/img/gourmet.jpg" class=" d-block  h-50 w-100" alt="Mercado Gourmet">
+          <div class="carousel-caption d-none d-md-block">
+            <a class="textDecoration__none textDecoration__fontRoboto " href="./productos/tienda.html?cat=19"><h5 class="text-dark fw-bolder fs-1">Gourmet</h5></a>
+            <p class="text-dark fs-2 fw-bolder">Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>    
+    </div>
+    <footer class="footer">
+        <div class="footerDiv">
+            <div class="footerDiv__btnInicio"><a class="itemMenuLinkBotton" href="../index.html">Inicio</a></div>
+            <div class="footerDiv__btnAcerca"><a class="itemMenuLinkBotton" href="./about.html">Acerca</a></div>
+            <div class="footerDiv__btnContacto"><a class="itemMenuLinkBotton" href="./contactanos.html">Contactanos</a></div>
+            <div class="footerDiv__btnProducto"><a class="itemMenuLinkBotton" href="./productos.html">Productos</a></div>        
+        </div>
+        <div class="divMenuBotton">
+            <p class="divMenuBotton__pCopy">Copyright Andres Padilla</p>
+        </div> 
+    </footer>
+
+</body>
+</html>

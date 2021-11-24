@@ -1,0 +1,365 @@
+@media only screen and (min-width: 768px) {
+    .divProductosCategoria {
+        display: grid;
+        grid-template-areas:
+        'divImg1 divImg2 divImg3 divImg4'
+        'divTitulo1 divTitulo2 divTitulo3 divTitulo4'
+        'divDesc1 divDesc2 divDesc3 divDesc4'
+        'divPrecio1 divPrecio2 divPrecio3 divPrecio4';
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+        justify-items: stretch;
+        align-items:stretch;
+        justify-content: end;
+        align-content: center;
+        @for $i from 1 to 5 {
+            .divImg#{$i}{
+                grid-area: divImg#{$i};
+            }
+            .divTitulo#{$i}{
+                grid-area: divTitulo#{$i};
+            }
+            .divDesc#{$i}{
+                grid-area: divDesc#{$i};
+            }
+            .divPrecio#{$i}{
+                grid-area: divPrecio#{$i};
+                margin-bottom: 30px;
+            }
+        }      
+    }
+    @for $i from 1 to 5 {
+        .divImg#{$i}__imagProductos{
+            width: 80%;
+            text-align: center;
+        }    
+        .divTitulo#{$i}__titProducto{
+            text-align: center;
+            color:$colorSubTitulo;
+            font-size:$sizeSubTitulo;
+        }
+        .divDesc#{$i}__descProducto{
+            padding-left: 50px;
+            padding-right: 50px;
+            font-size:$sizeTexto;
+        }
+        .divPrecio#{$i}__precioProducto{
+            padding-left: 50px;
+            padding-right: 50px;
+            font-size:$sizeTexto;
+        }     
+    }   
+    .footerDiv{
+        display: grid;
+        grid-template-areas:
+        'footerDiv__btnInicio footerDiv__btnAcerca footerDiv__btnContacto footerDiv__btnProducto';
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+        justify-items: center;
+        align-items:center;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height: 70px;
+        margin-top: 25px;
+        @each $nombre,$botones in $varButtonBottom {
+             
+            .footerDiv__#{$botones}{
+                grid-area: footerDiv__#{$botones};
+                border: black;
+                border-radius: 20px;
+                width: 25%;
+                align-content: center;
+            }
+            .footerDiv__#{$botones}:hover{
+                transform:scale(1.5,2);
+                background-color: burlywood;
+                border-radius: 20px;
+                width: 50%;
+                text-align: center;
+            }
+             
+        } 
+    }
+    .divProductosIndex {
+        display: grid;
+        grid-template-areas:
+        'divImgDecoIndex divImgSustIndex divImgGourIndex'
+        'divTituloDecoIndex divTituloSustIndex divTituloGourIndex'
+        'divDescDecoIndex divDescSustIndex divDescGourIndex';
+        grid-template-columns: 4fr 4fr 4fr;
+        justify-content: space-between;
+        @each $nombre,$area in $varImgIndexProduct {          
+            .#{$area}{
+                grid-area: #{$area};
+            }      
+        } 
+        @each $nombre,$area in $varTituloIndexProduct {          
+            .#{$area}{
+                grid-area: #{$area};
+                margin: 3%;
+                text-align:justify;
+                margin-bottom: 10px;
+            }    
+        } 
+        @each $nombre,$area in $varDescIndexProduct {          
+            .#{$area}{
+                grid-area: #{$area};
+                text-align:justify;
+            }    
+        }    
+    } 
+}
+@media only screen and (max-width: 767px) and (min-width: 321px) {
+    .divProductosCategoria {
+        display: grid;
+        grid-template-areas:
+        'divImg1 divImg2'
+        'divTitulo1 divTitulo2'
+        'divDesc1 divDesc2'
+        'divPrecio1 divPrecio2'
+        'divImg3 divImg4'
+        'divTitulo3 divTitulo4'
+        'divDesc3 divDesc4'
+        'divPrecio3 divPrecio4';
+        grid-template-columns: 4fr 4fr;
+        justify-items: stretch;
+        align-items:stretch;
+        justify-content: end;
+        align-content: center;
+        @for $i from 1 to 5 {
+            .divImg#{$i}{
+                grid-area: divImg#{$i};
+            }
+            .divTitulo#{$i}{
+                grid-area: divTitulo#{$i};
+            }
+            .divDesc#{$i}{
+                grid-area: divDesc#{$i};
+            }
+            .divPrecio#{$i}{
+                grid-area: divPrecio#{$i};
+                margin-bottom: 30px;
+            }
+        }  
+    }
+    @for $i from 1 to 5 {
+        .divImg#{$i}__imagProductos{
+            width: 80%;
+            text-align: center;
+        }    
+        .divTitulo#{$i}__titProducto{
+            text-align: center;
+            color:$colorSubTitulo;
+            font-size:$sizeSubTitulo;
+        }
+        .divDesc#{$i}__descProducto{
+            padding-left: 50px;
+            padding-right: 50px;
+            font-size:$sizeTexto;
+        }
+        .divPrecio#{$i}__precioProducto{
+            padding-left: 50px;
+            padding-right: 50px;
+            font-size:$sizeTexto;
+        }     
+    }   
+    .footerDiv{
+        display: grid;
+        grid-template-areas:
+        'footerDiv__btnInicio'
+        'footerDiv__btnAcerca'
+        'footerDiv__btnContacto'
+        'footerDiv__btnProducto';
+        grid-template-columns: 4fr;
+        justify-items: center;
+        align-items:center;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height: 70px;
+        margin-top: 25px;
+        padding-top: 25px;
+        text-align: center;
+        @each $nombre,$botones in $varButtonBottom {
+            .footerDiv__#{$botones}{
+                grid-area: footerDiv__#{$botones};
+                border: black;
+                border-radius: 20px;
+                width: 25%;
+                align-content: center;
+            }
+            .footerDiv__#{$botones}:hover{
+                transform:scale(2,2);
+                background-color: burlywood;
+                border-radius: 20px;
+                width: 27%;
+                text-align: center;
+            }     
+        } 
+    }
+    .divProductosIndex {
+        display: grid;
+        grid-template-areas:
+        'divImgDecoIndex'
+        'divTituloDecoIndex '
+        'divDescDecoIndex '
+        'divImgSustIndex'
+        'divTituloSustIndex'
+        'divDescSustIndex'
+        'divImgGourIndex'
+        'divTituloGourIndex'
+        'divDescGourIndex';
+        grid-template-columns: 4fr;
+        justify-content: space-between;
+        @each $nombre,$area in $varImgIndexProduct {          
+            .#{$area}{
+                grid-area: #{$area};
+            }      
+        } 
+        @each $nombre,$area in $varTituloIndexProduct {          
+            .#{$area}{
+                grid-area: #{$area};
+                text-align:justify;
+                margin: 3%;
+                margin-bottom: 10px;
+            }    
+        } 
+        @each $nombre,$area in $varDescIndexProduct {          
+            .#{$area}{
+                grid-area: #{$area};
+                text-align:justify;
+            }    
+        } 
+    }  
+}
+@media only screen and (max-width: 320px) {
+    .divProductosCategoria {
+        display: grid;
+        grid-template-areas:
+        'divImg1'
+        'divTitulo1'
+        'divDesc1'
+        'divPrecio1'
+        'divImg2'
+        'divTitulo2'
+        'divDesc2'
+        'divPrecio2'
+        'divImg3'
+        'divTitulo3'
+        'divDesc3'
+        'divPrecio3'
+        'divImg4'
+        'divTitulo4'
+        'divDesc4'
+        'divPrecio4';
+        grid-template-columns: 4fr;
+        justify-items: stretch;
+        align-items:stretch;
+        justify-content: end;
+        align-content: center;
+        @for $i from 1 to 5 {
+            .divImg#{$i}{
+                grid-area: divImg#{$i};
+            }
+            .divTitulo#{$i}{
+                grid-area: divTitulo#{$i};
+            }
+            .divDesc#{$i}{
+                grid-area: divDesc#{$i};
+            }
+            .divPrecio#{$i}{
+                grid-area: divPrecio#{$i};
+                margin-bottom: 30px;
+            }
+        }  
+    }
+    @for $i from 1 to 5 {
+        .divImg#{$i}__imagProductos{
+            width: 80%;
+            text-align: center;
+        }    
+        .divTitulo#{$i}__titProducto{
+            text-align: center;
+            color:$colorSubTitulo;
+            font-size:$sizeSubTitulo;
+        }
+        .divDesc#{$i}__descProducto{
+            padding-left: 50px;
+            padding-right: 50px;
+            font-size:$sizeTexto;
+        }
+        .divPrecio#{$i}__precioProducto{
+            padding-left: 50px;
+            padding-right: 50px;
+            font-size:$sizeTexto;
+        }     
+    }  
+    .footerDiv{
+        display: grid;
+        grid-template-areas:
+        'footerDiv__btnInicio'
+        'footerDiv__btnAcerca'
+        'footerDiv__btnContacto'
+        'footerDiv__btnProducto';
+        grid-template-columns: 4fr;
+        justify-items: center;
+        align-items:center;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height: 70px;
+        margin-top: 25px;
+        padding-top: 25px;
+        text-align: center;
+        @each $nombre,$botones in $varButtonBottom {          
+            .footerDiv__#{$botones}{
+                grid-area: footerDiv__#{$botones};
+                border: black;
+                border-radius: 20px;
+                width: 25%;
+                align-content: center;
+            }
+            .footerDiv__#{$botones}:hover{
+                transform:scale(2,2);
+                background-color: burlywood;
+                border-radius: 20px;
+                width: 27%;
+                text-align: center;
+            }        
+        } 
+
+    } 
+    .divProductosIndex {
+        display: grid;
+        grid-template-areas:
+        'divImgDecoIndex'
+        'divTituloDecoIndex '
+        'divDescDecoIndex '
+        'divImgSustIndex'
+        'divTituloSustIndex'
+        'divDescSustIndex'
+        'divImgGourIndex'
+        'divTituloGourIndex'
+        'divDescGourIndex';
+        grid-template-columns: 4fr;
+        justify-content: space-between;
+        @each $nombre,$area in $varImgIndexProduct {          
+            .#{$area}{
+                grid-area: #{$area};
+            }      
+        } 
+        @each $nombre,$area in $varTituloIndexProduct {          
+            .#{$area}{
+                grid-area: #{$area};
+                text-align:justify;
+                margin: 3%;
+                margin-bottom: 10px;
+            }    
+        } 
+        @each $nombre,$area in $varDescIndexProduct {          
+            .#{$area}{
+                grid-area: #{$area};
+                text-align:justify;
+            }    
+        } 
+    }  
+}

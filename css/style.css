@@ -1,0 +1,795 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap");
+@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: none; }
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block; }
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0; } }
+
+@media only screen and (min-width: 768px) {
+  .divProductosCategoria {
+    display: grid;
+    grid-template-areas: 'divImg1 divImg2 divImg3 divImg4' 'divTitulo1 divTitulo2 divTitulo3 divTitulo4' 'divDesc1 divDesc2 divDesc3 divDesc4' 'divPrecio1 divPrecio2 divPrecio3 divPrecio4';
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    justify-items: stretch;
+    align-items: stretch;
+    justify-content: end;
+    align-content: center; }
+    .divProductosCategoria .divImg1 {
+      grid-area: divImg1; }
+    .divProductosCategoria .divTitulo1 {
+      grid-area: divTitulo1; }
+    .divProductosCategoria .divDesc1 {
+      grid-area: divDesc1; }
+    .divProductosCategoria .divPrecio1 {
+      grid-area: divPrecio1;
+      margin-bottom: 30px; }
+    .divProductosCategoria .divImg2 {
+      grid-area: divImg2; }
+    .divProductosCategoria .divTitulo2 {
+      grid-area: divTitulo2; }
+    .divProductosCategoria .divDesc2 {
+      grid-area: divDesc2; }
+    .divProductosCategoria .divPrecio2 {
+      grid-area: divPrecio2;
+      margin-bottom: 30px; }
+    .divProductosCategoria .divImg3 {
+      grid-area: divImg3; }
+    .divProductosCategoria .divTitulo3 {
+      grid-area: divTitulo3; }
+    .divProductosCategoria .divDesc3 {
+      grid-area: divDesc3; }
+    .divProductosCategoria .divPrecio3 {
+      grid-area: divPrecio3;
+      margin-bottom: 30px; }
+    .divProductosCategoria .divImg4 {
+      grid-area: divImg4; }
+    .divProductosCategoria .divTitulo4 {
+      grid-area: divTitulo4; }
+    .divProductosCategoria .divDesc4 {
+      grid-area: divDesc4; }
+    .divProductosCategoria .divPrecio4 {
+      grid-area: divPrecio4;
+      margin-bottom: 30px; }
+  .divImg1__imagProductos {
+    width: 80%;
+    text-align: center; }
+  .divTitulo1__titProducto {
+    text-align: center;
+    color: #583838;
+    font-size: xx-large; }
+  .divDesc1__descProducto {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: x-large; }
+  .divPrecio1__precioProducto {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: x-large; }
+  .divImg2__imagProductos {
+    width: 80%;
+    text-align: center; }
+  .divTitulo2__titProducto {
+    text-align: center;
+    color: #583838;
+    font-size: xx-large; }
+  .divDesc2__descProducto {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: x-large; }
+  .divPrecio2__precioProducto {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: x-large; }
+  .divImg3__imagProductos {
+    width: 80%;
+    text-align: center; }
+  .divTitulo3__titProducto {
+    text-align: center;
+    color: #583838;
+    font-size: xx-large; }
+  .divDesc3__descProducto {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: x-large; }
+  .divPrecio3__precioProducto {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: x-large; }
+  .divImg4__imagProductos {
+    width: 80%;
+    text-align: center; }
+  .divTitulo4__titProducto {
+    text-align: center;
+    color: #583838;
+    font-size: xx-large; }
+  .divDesc4__descProducto {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: x-large; }
+  .divPrecio4__precioProducto {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: x-large; }
+  .footerDiv {
+    display: grid;
+    grid-template-areas: 'footerDiv__btnInicio footerDiv__btnAcerca footerDiv__btnContacto footerDiv__btnProducto';
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 70px;
+    margin-top: 25px; }
+    .footerDiv .footerDiv__btnInicio {
+      grid-area: footerDiv__btnInicio;
+      border: black;
+      border-radius: 20px;
+      width: 25%;
+      align-content: center; }
+    .footerDiv .footerDiv__btnInicio:hover {
+      transform: scale(1.5, 2);
+      background-color: burlywood;
+      border-radius: 20px;
+      width: 50%;
+      text-align: center; }
+    .footerDiv .footerDiv__btnAcerca {
+      grid-area: footerDiv__btnAcerca;
+      border: black;
+      border-radius: 20px;
+      width: 25%;
+      align-content: center; }
+    .footerDiv .footerDiv__btnAcerca:hover {
+      transform: scale(1.5, 2);
+      background-color: burlywood;
+      border-radius: 20px;
+      width: 50%;
+      text-align: center; }
+    .footerDiv .footerDiv__btnContacto {
+      grid-area: footerDiv__btnContacto;
+      border: black;
+      border-radius: 20px;
+      width: 25%;
+      align-content: center; }
+    .footerDiv .footerDiv__btnContacto:hover {
+      transform: scale(1.5, 2);
+      background-color: burlywood;
+      border-radius: 20px;
+      width: 50%;
+      text-align: center; }
+    .footerDiv .footerDiv__btnProducto {
+      grid-area: footerDiv__btnProducto;
+      border: black;
+      border-radius: 20px;
+      width: 25%;
+      align-content: center; }
+    .footerDiv .footerDiv__btnProducto:hover {
+      transform: scale(1.5, 2);
+      background-color: burlywood;
+      border-radius: 20px;
+      width: 50%;
+      text-align: center; } }
+
+@media only screen and (max-width: 767px) and (min-width: 321px) {
+  .divProductosCategoria {
+    display: grid;
+    grid-template-areas: 'divImg1 divImg2' 'divTitulo1 divTitulo2' 'divDesc1 divDesc2' 'divPrecio1 divPrecio2' 'divImg3 divImg4' 'divTitulo3 divTitulo4' 'divDesc3 divDesc4' 'divPrecio3 divPrecio4';
+    grid-template-columns: 4fr 4fr;
+    justify-items: stretch;
+    align-items: stretch;
+    justify-content: end;
+    align-content: center; }
+    .divProductosCategoria .divImg1 {
+      grid-area: divImg1; }
+    .divProductosCategoria .divTitulo1 {
+      grid-area: divTitulo1; }
+    .divProductosCategoria .divDesc1 {
+      grid-area: divDesc1; }
+    .divProductosCategoria .divPrecio1 {
+      grid-area: divPrecio1;
+      margin-bottom: 30px; }
+    .divProductosCategoria .divImg2 {
+      grid-area: divImg2; }
+    .divProductosCategoria .divTitulo2 {
+      grid-area: divTitulo2; }
+    .divProductosCategoria .divDesc2 {
+      grid-area: divDesc2; }
+    .divProductosCategoria .divPrecio2 {
+      grid-area: divPrecio2;
+      margin-bottom: 30px; }
+    .divProductosCategoria .divImg3 {
+      grid-area: divImg3; }
+    .divProductosCategoria .divTitulo3 {
+      grid-area: divTitulo3; }
+    .divProductosCategoria .divDesc3 {
+      grid-area: divDesc3; }
+    .divProductosCategoria .divPrecio3 {
+      grid-area: divPrecio3;
+      margin-bottom: 30px; }
+    .divProductosCategoria .divImg4 {
+      grid-area: divImg4; }
+    .divProductosCategoria .divTitulo4 {
+      grid-area: divTitulo4; }
+    .divProductosCategoria .divDesc4 {
+      grid-area: divDesc4; }
+    .divProductosCategoria .divPrecio4 {
+      grid-area: divPrecio4;
+      margin-bottom: 30px; }
+  .divImg1__imagProductos {
+    width: 80%;
+    text-align: center; }
+  .divTitulo1__titProducto {
+    text-align: center;
+    color: #583838;
+    font-size: xx-large; }
+  .divDesc1__descProducto {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: x-large; }
+  .divPrecio1__precioProducto {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: x-large; }
+  .divImg2__imagProductos {
+    width: 80%;
+    text-align: center; }
+  .divTitulo2__titProducto {
+    text-align: center;
+    color: #583838;
+    font-size: xx-large; }
+  .divDesc2__descProducto {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: x-large; }
+  .divPrecio2__precioProducto {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: x-large; }
+  .divImg3__imagProductos {
+    width: 80%;
+    text-align: center; }
+  .divTitulo3__titProducto {
+    text-align: center;
+    color: #583838;
+    font-size: xx-large; }
+  .divDesc3__descProducto {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: x-large; }
+  .divPrecio3__precioProducto {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: x-large; }
+  .divImg4__imagProductos {
+    width: 80%;
+    text-align: center; }
+  .divTitulo4__titProducto {
+    text-align: center;
+    color: #583838;
+    font-size: xx-large; }
+  .divDesc4__descProducto {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: x-large; }
+  .divPrecio4__precioProducto {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: x-large; }
+  .footerDiv {
+    display: grid;
+    grid-template-areas: 'footerDiv__btnInicio' 'footerDiv__btnAcerca' 'footerDiv__btnContacto' 'footerDiv__btnProducto';
+    grid-template-columns: 4fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 70px;
+    margin-top: 25px;
+    padding-top: 25px;
+    text-align: center; }
+    .footerDiv .footerDiv__btnInicio {
+      grid-area: footerDiv__btnInicio;
+      border: black;
+      border-radius: 20px;
+      width: 25%;
+      align-content: center; }
+    .footerDiv .footerDiv__btnInicio:hover {
+      transform: scale(2, 2);
+      background-color: burlywood;
+      border-radius: 20px;
+      width: 27%;
+      text-align: center; }
+    .footerDiv .footerDiv__btnAcerca {
+      grid-area: footerDiv__btnAcerca;
+      border: black;
+      border-radius: 20px;
+      width: 25%;
+      align-content: center; }
+    .footerDiv .footerDiv__btnAcerca:hover {
+      transform: scale(2, 2);
+      background-color: burlywood;
+      border-radius: 20px;
+      width: 27%;
+      text-align: center; }
+    .footerDiv .footerDiv__btnContacto {
+      grid-area: footerDiv__btnContacto;
+      border: black;
+      border-radius: 20px;
+      width: 25%;
+      align-content: center; }
+    .footerDiv .footerDiv__btnContacto:hover {
+      transform: scale(2, 2);
+      background-color: burlywood;
+      border-radius: 20px;
+      width: 27%;
+      text-align: center; }
+    .footerDiv .footerDiv__btnProducto {
+      grid-area: footerDiv__btnProducto;
+      border: black;
+      border-radius: 20px;
+      width: 25%;
+      align-content: center; }
+    .footerDiv .footerDiv__btnProducto:hover {
+      transform: scale(2, 2);
+      background-color: burlywood;
+      border-radius: 20px;
+      width: 27%;
+      text-align: center; } }
+
+@media only screen and (max-width: 320px) {
+  .divProductosCategoria {
+    display: grid;
+    grid-template-areas: 'divImg1' 'divTitulo1' 'divDesc1' 'divPrecio1' 'divImg2' 'divTitulo2' 'divDesc2' 'divPrecio2' 'divImg3' 'divTitulo3' 'divDesc3' 'divPrecio3' 'divImg4' 'divTitulo4' 'divDesc4' 'divPrecio4';
+    grid-template-columns: 4fr;
+    justify-items: stretch;
+    align-items: stretch;
+    justify-content: end;
+    align-content: center; }
+    .divProductosCategoria .divImg1 {
+      grid-area: divImg1; }
+    .divProductosCategoria .divTitulo1 {
+      grid-area: divTitulo1; }
+    .divProductosCategoria .divDesc1 {
+      grid-area: divDesc1; }
+    .divProductosCategoria .divPrecio1 {
+      grid-area: divPrecio1;
+      margin-bottom: 30px; }
+    .divProductosCategoria .divImg2 {
+      grid-area: divImg2; }
+    .divProductosCategoria .divTitulo2 {
+      grid-area: divTitulo2; }
+    .divProductosCategoria .divDesc2 {
+      grid-area: divDesc2; }
+    .divProductosCategoria .divPrecio2 {
+      grid-area: divPrecio2;
+      margin-bottom: 30px; }
+    .divProductosCategoria .divImg3 {
+      grid-area: divImg3; }
+    .divProductosCategoria .divTitulo3 {
+      grid-area: divTitulo3; }
+    .divProductosCategoria .divDesc3 {
+      grid-area: divDesc3; }
+    .divProductosCategoria .divPrecio3 {
+      grid-area: divPrecio3;
+      margin-bottom: 30px; }
+    .divProductosCategoria .divImg4 {
+      grid-area: divImg4; }
+    .divProductosCategoria .divTitulo4 {
+      grid-area: divTitulo4; }
+    .divProductosCategoria .divDesc4 {
+      grid-area: divDesc4; }
+    .divProductosCategoria .divPrecio4 {
+      grid-area: divPrecio4;
+      margin-bottom: 30px; }
+  .divImg1__imagProductos {
+    width: 80%;
+    text-align: center; }
+  .divTitulo1__titProducto {
+    text-align: center;
+    color: #583838;
+    font-size: xx-large; }
+  .divDesc1__descProducto {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: x-large; }
+  .divPrecio1__precioProducto {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: x-large; }
+  .divImg2__imagProductos {
+    width: 80%;
+    text-align: center; }
+  .divTitulo2__titProducto {
+    text-align: center;
+    color: #583838;
+    font-size: xx-large; }
+  .divDesc2__descProducto {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: x-large; }
+  .divPrecio2__precioProducto {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: x-large; }
+  .divImg3__imagProductos {
+    width: 80%;
+    text-align: center; }
+  .divTitulo3__titProducto {
+    text-align: center;
+    color: #583838;
+    font-size: xx-large; }
+  .divDesc3__descProducto {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: x-large; }
+  .divPrecio3__precioProducto {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: x-large; }
+  .divImg4__imagProductos {
+    width: 80%;
+    text-align: center; }
+  .divTitulo4__titProducto {
+    text-align: center;
+    color: #583838;
+    font-size: xx-large; }
+  .divDesc4__descProducto {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: x-large; }
+  .divPrecio4__precioProducto {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: x-large; }
+  .footerDiv {
+    display: grid;
+    grid-template-areas: 'footerDiv__btnInicio' 'footerDiv__btnAcerca' 'footerDiv__btnContacto' 'footerDiv__btnProducto';
+    grid-template-columns: 4fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 70px;
+    margin-top: 25px;
+    padding-top: 25px;
+    text-align: center; }
+    .footerDiv .footerDiv__btnInicio {
+      grid-area: footerDiv__btnInicio;
+      border: black;
+      border-radius: 20px;
+      width: 25%;
+      align-content: center; }
+    .footerDiv .footerDiv__btnInicio:hover {
+      transform: scale(2, 2);
+      background-color: burlywood;
+      border-radius: 20px;
+      width: 27%;
+      text-align: center; }
+    .footerDiv .footerDiv__btnAcerca {
+      grid-area: footerDiv__btnAcerca;
+      border: black;
+      border-radius: 20px;
+      width: 25%;
+      align-content: center; }
+    .footerDiv .footerDiv__btnAcerca:hover {
+      transform: scale(2, 2);
+      background-color: burlywood;
+      border-radius: 20px;
+      width: 27%;
+      text-align: center; }
+    .footerDiv .footerDiv__btnContacto {
+      grid-area: footerDiv__btnContacto;
+      border: black;
+      border-radius: 20px;
+      width: 25%;
+      align-content: center; }
+    .footerDiv .footerDiv__btnContacto:hover {
+      transform: scale(2, 2);
+      background-color: burlywood;
+      border-radius: 20px;
+      width: 27%;
+      text-align: center; }
+    .footerDiv .footerDiv__btnProducto {
+      grid-area: footerDiv__btnProducto;
+      border: black;
+      border-radius: 20px;
+      width: 25%;
+      align-content: center; }
+    .footerDiv .footerDiv__btnProducto:hover {
+      transform: scale(2, 2);
+      background-color: burlywood;
+      border-radius: 20px;
+      width: 27%;
+      text-align: center; } }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+.header {
+  position: sticky;
+  top: 0px;
+  z-index: 5;
+  height: 75px;
+  background-color: #ebcc9f;
+  font-family: "Roboto Condensed", sans-serif;
+  vertical-align: bottom; }
+
+.menu__bg {
+  position: sticky;
+  top: 0px;
+  z-index: 5;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  background-color: #ebcc9f;
+  vertical-align: bottom; }
+
+.textDecoration__none {
+  text-decoration: none; }
+  .textDecoration__none .textDecoration__fontRoboto {
+    font-family: "Roboto Condensed", sans-serif; }
+
+.logo {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%; }
+
+.itemMenuLinkBotton {
+  color: #583838;
+  text-decoration: none;
+  list-style: none;
+  width: 25%;
+  font-family: "Roboto Condensed", sans-serif; }
+
+.tituloPagina {
+  color: grey;
+  margin-bottom: 5%;
+  font-size: xxx-large; }
+
+.subTituloPagina {
+  text-align: center;
+  color: #583838;
+  font-size: xx-large; }
+
+.mainCentrado {
+  box-align: center;
+  align-content: center;
+  text-align: center; }
+
+.espaciado {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 100%; }
+
+.pDescriptivo {
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: x-large; }
+
+.videoDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.descVideosDiv {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: x-large; }
+
+.footer {
+  background-color: lightgray;
+  z-index: 99;
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: calc( 37vh - 50px);
+  background: linear-gradient(to top, #ebcc9f, #ccc);
+  width: 100%; }
+
+.divMenuBotton {
+  display: flex;
+  height: 70px;
+  width: 100%;
+  clear: both;
+  margin-top: 25px;
+  box-align: center;
+  align-content: center;
+  text-align: center; }
+  .divMenuBotton .divMenuBotton__pCopy {
+    margin-top: 15px;
+    height: 40px;
+    width: 100%; }
+
+.divArticulos {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-content: center;
+  text-align: center; }
+
+.articulo {
+  text-align: center;
+  width: 50%; }
+  .articulo .articulo__titulo {
+    color: #583838;
+    font-size: xx-large; }
+  .articulo .articulo__cuerpo {
+    align-content: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    width: 100%;
+    font-size: x-large; }
+
+.acercaDe {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-content: center;
+  text-align: center; }
+  .acercaDe .acercaDe__titulo {
+    color: grey;
+    margin-bottom: 5%;
+    font-size: xx-large; }
+  .acercaDe .acercaDe__cuerpo {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    width: 75%;
+    text-align: justify;
+    font-size: x-large; }
+
+.imagenesProductos {
+  width: 80%;
+  margin: 10%;
+  text-align: center; }
+
+.imagBotones {
+  width: 100%;
+  height: 120px;
+  text-align: center; }
+
+@media only screen and (min-width: 768px) {
+  .divProductosIndex {
+    display: grid;
+    grid-template-areas: 'divImgDecoIndex divImgSustIndex divImgGourIndex' 'divTituloDecoIndex divTituloSustIndex divTituloGourIndex' 'divDescDecoIndex divDescSustIndex divDescGourIndex';
+    grid-template-columns: 4fr 4fr 4fr;
+    justify-content: space-between; }
+    .divProductosIndex .divImgDecoIndex {
+      grid-area: divImgDecoIndex; }
+    .divProductosIndex .divImgSustIndex {
+      grid-area: divImgSustIndex; }
+    .divProductosIndex .divImgGourIndex {
+      grid-area: divImgGourIndex; }
+    .divProductosIndex .divTituloDecoIndex {
+      grid-area: divTituloDecoIndex;
+      text-align: justify;
+      margin-bottom: 10px; }
+    .divProductosIndex .divTituloSustIndex {
+      grid-area: divTituloSustIndex;
+      text-align: justify;
+      margin-bottom: 10px; }
+    .divProductosIndex .divTituloGourIndex {
+      grid-area: divTituloGourIndex;
+      text-align: justify;
+      margin-bottom: 10px; }
+    .divProductosIndex .divDescDecoIndex {
+      grid-area: divDescDecoIndex;
+      text-align: justify; }
+    .divProductosIndex .divDescSustIndex {
+      grid-area: divDescSustIndex;
+      text-align: justify; }
+    .divProductosIndex .divDescGourIndex {
+      grid-area: divDescGourIndex;
+      text-align: justify; }
+  .divProductos {
+    display: grid;
+    grid-template-areas: 'divTitulo divTitulo divTitulo' 'divImgDeco divImgSust divImgGour' 'divTituloDeco divTituloSust divTituloGour' 'divDescDeco divDescSust divDescGour';
+    grid-template-columns: 4fr 4fr 4fr;
+    justify-items: stretch;
+    align-items: stretch;
+    justify-content: end;
+    align-content: center; }
+    .divProductos .divTitulo {
+      grid-area: divTitulo; }
+    .divProductos .divImgDeco {
+      grid-area: divImgDeco; }
+    .divProductos .divImgSust {
+      grid-area: divImgSust; }
+    .divProductos .divImgGour {
+      grid-area: divImgGour; }
+    .divProductos .divTituloDeco {
+      grid-area: divTituloDeco;
+      text-align: justify; }
+    .divProductos .divTituloSust {
+      grid-area: divTituloSust;
+      text-align: justify; }
+    .divProductos .divTituloGour {
+      grid-area: divTituloGour;
+      text-align: justify; }
+    .divProductos .divDescDeco {
+      grid-area: divDescDeco;
+      text-align: justify; }
+    .divProductos .divDescSust {
+      grid-area: divDescSust;
+      text-align: justify; }
+    .divProductos .divDescGour {
+      grid-area: divDescGour;
+      text-align: justify; } }
+
+@media only screen and (max-width: 767px) and (min-width: 321px) {
+  .divProductosIndex {
+    display: grid;
+    grid-template-areas: 'divImgDecoIndex' 'divTituloDecoIndex ' 'divDescDecoIndex ' 'divImgSustIndex' 'divTituloSustIndex' 'divDescSustIndex' 'divImgGourIndex' 'divTituloGourIndex' 'divDescGourIndex';
+    grid-template-columns: 4fr;
+    justify-content: space-between; }
+    .divProductosIndex .divImgDecoIndex {
+      grid-area: divImgDecoIndex; }
+    .divProductosIndex .divImgSustIndex {
+      grid-area: divImgSustIndex; }
+    .divProductosIndex .divImgGourIndex {
+      grid-area: divImgGourIndex; }
+    .divProductosIndex .divTituloDecoIndex {
+      grid-area: divTituloDecoIndex;
+      margin: 3%;
+      margin-bottom: 10px; }
+    .divProductosIndex .divTituloSustIndex {
+      grid-area: divTituloSustIndex;
+      margin: 3%;
+      margin-bottom: 10px; }
+    .divProductosIndex .divTituloGourIndex {
+      grid-area: divTituloGourIndex;
+      margin: 3%;
+      margin-bottom: 10px; }
+    .divProductosIndex .divDescDecoIndex {
+      grid-area: divDescDecoIndex;
+      text-align: justify; }
+    .divProductosIndex .divDescSustIndex {
+      grid-area: divDescSustIndex;
+      text-align: justify; }
+    .divProductosIndex .divDescGourIndex {
+      grid-area: divDescGourIndex;
+      text-align: justify; }
+  .divProductos {
+    display: grid;
+    grid-template-areas: 'divTitulo ' 'divImgDeco' 'divTituloDeco ' 'divDescDeco ' 'divImgSust' 'divTituloSust' 'divDescSust' 'divImgGour' 'divTituloGour' 'divDescGour';
+    grid-template-columns: 4fr;
+    justify-items: stretch;
+    align-items: stretch;
+    justify-content: end;
+    align-content: center; }
+    .divProductos .divTitulo {
+      grid-area: divTitulo; }
+    .divProductos .divImgDeco {
+      grid-area: divImgDeco; }
+    .divProductos .divImgSust {
+      grid-area: divImgSust; }
+    .divProductos .divImgGour {
+      grid-area: divImgGour; }
+    .divProductos .divTituloDeco {
+      grid-area: divTituloDeco; }
+    .divProductos .divTituloSust {
+      grid-area: divTituloSust; }
+    .divProductos .divTituloGour {
+      grid-area: divTituloGour; }
+    .divProductos .divDescDeco {
+      grid-area: divDescDeco; }
+    .divProductos .divDescSust {
+      grid-area: divDescSust; }
+    .divProductos .divDescGour {
+      grid-area: divDescGour; } }

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>       
+    <title>MercaditoChic - Contactanos</title>
+</head>
+<body>
+  <div class="container-fluid header">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">MercaditoChic</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse menu__bg" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">  <a class="nav-link text-dark" href="../index.html">Inicio</a> </li>
+          <li class="nav-item">  <a class="nav-link text-dark"  href="./noticias.html">Noticias</a> </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link text-dark" href="./productos.html" id="navbarDarkDropdownMenuLink" >Productos</a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="./productos/tienda.html?cat=18">Deco</a></li>
+                <li><a class="dropdown-item" href="./productos/tienda.html?cat=20">Sustentable</a></li>
+                <li><a class="dropdown-item" href="./productos/tienda.html?cat=19">Gourmet</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">  <a class="nav-link text-dark"  href="./contactanos.html">Contactanos</a> </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-dark" type="submit">Buscar</button>
+        </form>
+      </div>
+    </nav>  
+  </div>
+
+    <main class=" espaciado">
+      <form action="mailero-completo" method="post">  
+        <div class="container-sm">
+          <h1 class="tituloPagina">Contactanos</h1>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Nombre Completo</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Escribe tu nombre completo">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Direccion de correo</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Escribe tu email">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Quiero suscribirme</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault0"checked>
+              <label class="form-check-label" for="flexRadioDefault0">
+                Basico
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+              Medio
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+              <label class="form-check-label" for="flexRadioDefault2">
+                Completo
+              </label>
+            </div>
+         </div>
+         <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+          <label class="form-check-label" for="flexCheckDefault">
+            Quiero recibir noticias
+          </label>
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary mb-3">Enviar</button>
+          <input class="btn btn-secondary mb-3" type="reset" value="Limpiar"> 
+         
+        </div>
+        </div>    
+        
+        
+                
+        </form>
+    </main>
+    <!-- Footer-->
+    <footer class="footer">
+        <div class="footerDiv">
+            <div class="footerDiv__btnInicio"><a class="itemMenuLinkBotton" href="../index.html">Inicio</a></div>
+            <div class="footerDiv__btnAcerca"><a class="itemMenuLinkBotton" href="./about.html">Acerca</a></div>
+            <div class="footerDiv__btnContacto"><a class="itemMenuLinkBotton" href="./contactanos.html">Contactanos</a></div>
+            <div class="footerDiv__btnProducto"><a class="itemMenuLinkBotton" href="./productos.html">Productos</a></div>        
+        </div>
+        <div class="divMenuBotton">
+            <p class="divMenuBotton__pCopy">Copyright Andres Padilla</p>
+        </div> 
+    </footer>
+
+</body>
+</html>

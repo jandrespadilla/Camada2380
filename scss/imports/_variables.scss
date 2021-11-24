@@ -1,0 +1,48 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+
+$fuentePrincipal:'Roboto Condensed', sans-serif;
+$fuenteSecundaria:'Fira Sans', sans-serif;
+
+ 
+$medidaBasica:1rem;
+$mediadBasicaCaja:720px;
+
+ 
+$colorSubTitulo:rgb(88, 56, 56);
+
+$sizeTitulo:xxx-large;
+$sizeSubTitulo:xx-large;
+$sizeTexto:x-large;
+
+$varButtonBottom:(
+    inicioBtn:btnInicio,
+    acercaBtn:btnAcerca,
+    contactoBtn:btnContacto,
+    productoBtn:btnProducto
+);
+
+$varImgIndexProduct:(
+    divImg1:divImgDecoIndex,
+    divImg2:divImgSustIndex,
+    divImg3:divImgGourIndex,
+);
+$varTituloIndexProduct:(
+    divTitulo1: divTituloDecoIndex,
+    divTitulo2:divTituloSustIndex,
+    divTitulo3:divTituloGourIndex,
+);
+$varDescIndexProduct:(
+    divDesc1:divDescDecoIndex,
+    divDesc2:divDescSustIndex,
+    divDesc3:divDescGourIndex
+);
+
+
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{}
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
