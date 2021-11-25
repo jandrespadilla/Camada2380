@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+$fuentePrincipal:'Roboto Condensed', sans-serif;
+$fuenteSecundaria:'Fira Sans', sans-serif;
+$colorSubTitulo:rgb(88, 56, 56);
+
+$nav-link-color:$colorSubTitulo;
+$nav-link-hover-color:$colorSubTitulo;
+
+$nav-link-font-size: x-large;
+$nav-tabs-border-color: null;
+$nav-tabs-border-width: 0;
+$input-font-family:                     $fuentePrincipal;
+$input-btn-font-family:                 $fuentePrincipal;
+ 
+$theme-colors: (
+  "primary": $colorSubTitulo,
+  "danger": $colorSubTitulo
+);
+ 
+$custom-colors: (
+  "custom-color": rgb(192, 122, 122),
+);
+ 
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$btn-transition:              color .15s ease-in-out, $colorSubTitulo .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+$medidaBasica:1rem;
+$mediadBasicaCaja:720px;
+
+ 
+
+
+
+
+$sizeTitulo:xx-large;
+$sizeSubTitulo:x-large;
+$sizeTexto:large;
+
+$varButtonBottom:(
+    inicioBtn:btnInicio,
+    acercaBtn:btnAcerca,
+    contactoBtn:btnContacto,
+    productoBtn:btnProducto
+);
+
+$varImgIndexProduct:(
+    divImg1:divImgDecoIndex,
+    divImg2:divImgSustIndex,
+    divImg3:divImgGourIndex,
+);
+$varTituloIndexProduct:(
+    divTitulo1: divTituloDecoIndex,
+    divTitulo2:divTituloSustIndex,
+    divTitulo3:divTituloGourIndex,
+);
+$varDescIndexProduct:(
+    divDesc1:divDescDecoIndex,
+    divDesc2:divDescSustIndex,
+    divDesc3:divDescGourIndex
+);
+
+
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{}
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}

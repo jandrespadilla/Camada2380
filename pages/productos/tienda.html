@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Un sitio para que podamos vender nuestras propias producciones">
+    <meta name="keywords"  content="ARTESANIAS, MANUALIDADES, DECORACIÓN, SUSTENTABLES, COMERCIO, ALMOHADONES, GOURMET ">   
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <script src="../../js/bootstrap.min.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>     
+    <title>MercaditoChic - Tienda</title>
+</head>
+<body>
+    <div class="container-fluid header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="../../index.html">MercaditoChic</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse menu__bg" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">  <a class="nav-link text-dark"  href="../noticias.html">Noticias</a> </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link text-dark" href="../productos.html" id="navbarDarkDropdownMenuLink" >Productos</a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="./tienda.html?cat=18">Deco</a></li>
+                  <li><a class="dropdown-item" href="./tienda.html?cat=20">Sustentable</a></li>
+                  <li><a class="dropdown-item" href="./tienda.html?cat=19">Gourmet</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">  <a class="nav-link text-dark"  href="../contactanos.html">Contactanos</a> </li>
+            </ul>
+          </div>
+        </nav>  
+      </div>
+    <main id='main' class="mainCentrado espaciado"></main>      
+    <footer class="footer">
+        <div class="footerDiv">
+            <div class="footerDiv__btnInicio"><a class="itemMenuLinkBotton" href="../../index.html">Inicio</a></div>
+            <div class="footerDiv__btnAcerca"><a class="itemMenuLinkBotton" href="../about.html">Acerca</a></div>
+            <div class="footerDiv__btnContacto"><a class="itemMenuLinkBotton" href="../contactanos.html">Contactanos</a></div>
+            <div class="footerDiv__btnProducto"><a class="itemMenuLinkBotton" href="../productos.html">Productos</a></div>        
+        </div>
+        <div class="divMenuBotton">
+            <p class="divMenuBotton__pCopy">Copyright Andres Padilla</p>
+        </div> 
+    </footer>
+</body>
+</html>
+
+<script >
+    cat = location.search.split('cat=')[1];
+    const url = 'https://mercaditochic.com.ar/wp-json/wc/v3/products/?per_page=12&category='+cat+'&consumer_key=ck_d7c60f7ed34e4475e64330c38a40731512ae2a9d&consumer_secret=cs_06b7156120645fa3f21313d4971a87728074a6e9';    
+    (async function miPrograma(){
+      let miPromesa =  fetch(url)
+           .then(response => response.text())
+           .then(text => {return JSON.parse(text);
+           });
+      async function obtenerLema(promesa) {
+            try {
+            let lema = await promesa;
+            return lema;
+            }
+            catch(e) {
+            console.error(e);
+            throw e;
+            }
+        }
+      try {
+            lemaObtenido = await obtenerLema(miPromesa);
+            console.log(lemaObtenido);
+            var div = document.getElementById('main');
+            switch (cat) {
+                case '18':
+                div.innerHTML = '<div class="divTitulo"><h1 class="tituloPagina">Productos Deco</h1></div>';
+                    break;
+                case '19':
+                div.innerHTML = '<div class="divTitulo"><h1 class="tituloPagina">Productos Gourme</h1></div>';
+                    break;
+                case '20':
+                div.innerHTML = '<div class="divTitulo"><h1 class="tituloPagina">Productos Sustentables</h1></div>';
+                    break;
+                default:
+                div.innerHTML = '<div class="divTitulo"><h1 class="tituloPagina">No se encontro esta categoria.</h1></div>';
+            }
+           
+            div.innerHTML += '<div class="divProductosCategoria">'
+                            +'<div class="divImg1"><img class="divImg1__imagProductos" src="'+lemaObtenido[0].images[0].src+'" alt="'+lemaObtenido[0].name+'"></div>'
+                            +'<div class="divImg2"><img class="divImg2__imagProductos" src="'+lemaObtenido[1].images[0].src+'" alt="'+lemaObtenido[1].name+'"></div>'
+                            +'<div class="divImg3"><img class="divImg3__imagProductos" src="'+lemaObtenido[2].images[0].src+'" alt="'+lemaObtenido[2].name+'"></div>'
+                            +'<div class="divImg4"><img class="divImg4__imagProductos" src="'+lemaObtenido[3].images[0].src+'" alt="'+lemaObtenido[3].name+'"></div>'
+                            +'<div class="divTitulo1"><h2 class="divTitulo1__titProducto">'+lemaObtenido[0].name+'</h2></div>'
+                            +'<div class="divTitulo2"><h2 class="divTitulo2__titProducto">'+lemaObtenido[1].name+'</h2></div>'
+                            +'<div class="divTitulo3"><h2 class="divTitulo3__titProducto">'+lemaObtenido[2].name+'</h2></div>'
+                            +'<div class="divTitulo4"><h2 class="divTitulo4__titProducto">'+lemaObtenido[3].name+'</h2></div>'
+                            +'<div class="divDesc1"><p class="divDesc1__descProducto">'+lemaObtenido[0].short_description+'</p></div>'
+                            +'<div class="divDesc2"><p class="divDesc2__descProducto">'+lemaObtenido[1].short_description+'</p></div>'
+                            +'<div class="divDesc3"><p class="divDesc3__descProducto">'+lemaObtenido[2].short_description+'</p></div>'
+                            +'<div class="divDesc4"><p class="divDesc4__descProducto">'+lemaObtenido[3].short_description+'</p></div>'
+                            +'<div class="divPrecio1"><p class="divPrecio1__precioProducto">$ '+lemaObtenido[0].price+'</p></div>'
+                            +'<div class="divPrecio2"><p class="divPrecio2__precioProducto">$ '+lemaObtenido[1].price+'</p></div>'
+                            +'<div class="divPrecio3"><p class="divPrecio3__precioProducto">$ '+lemaObtenido[2].price+'</p></div>'    
+                            +'<div class="divPrecio4"><p class="divPrecio4__precioProducto">$ '+lemaObtenido[3].price+'</p></div>'        
+                        +'</div> ';   
+            div.innerHTML += '<div class="divProductosCategoria">'
+                            +'<div class="divImg1"><img class="divImg1__imagProductos" src="'+lemaObtenido[4].images[0].src+'" alt="'+lemaObtenido[4].name+'"></div>'
+                            +'<div class="divImg2"><img class="divImg2__imagProductos" src="'+lemaObtenido[5].images[0].src+'" alt="'+lemaObtenido[5].name+'"></div>'
+                            +'<div class="divImg3"><img class="divImg3__imagProductos" src="'+lemaObtenido[6].images[0].src+'" alt="'+lemaObtenido[6].name+'"></div>'
+                            +'<div class="divImg4"><img class="divImg4__imagProductos" src="'+lemaObtenido[7].images[0].src+'" alt="'+lemaObtenido[7].name+'"></div>'
+                            +'<div class="divTitulo1"><h2 class="divTitulo1__titProducto">'+lemaObtenido[4].name+'</h2></div>'
+                            +'<div class="divTitulo2"><h2 class="divTitulo2__titProducto">'+lemaObtenido[5].name+'</h2></div>'
+                            +'<div class="divTitulo3"><h2 class="divTitulo3__titProducto">'+lemaObtenido[6].name+'</h2></div>'
+                            +'<div class="divTitulo4"><h2 class="divTitulo4__titProducto">'+lemaObtenido[7].name+'</h2></div>'
+                            +'<div class="divDesc1"><p class="divDesc1__descProducto">'+lemaObtenido[4].short_description+'</p></div>'
+                            +'<div class="divDesc2"><p class="divDesc2__descProducto">'+lemaObtenido[5].short_description+'</p></div>'
+                            +'<div class="divDesc3"><p class="divDesc3__descProducto">'+lemaObtenido[6].short_description+'</p></div>'
+                            +'<div class="divDesc4"><p class="divDesc4__descProducto">'+lemaObtenido[7].short_description+'</p></div>'
+                            +'<div class="divPrecio1"><p class="divPrecio1__precioProducto">$ '+lemaObtenido[4].price+'</p></div>'
+                            +'<div class="divPrecio2"><p class="divPrecio2__precioProducto">$ '+lemaObtenido[5].price+'</p></div>'
+                            +'<div class="divPrecio3"><p class="divPrecio3__precioProducto">$ '+lemaObtenido[6].price+'</p></div>'  
+                            +'<div class="divPrecio4"><p class="divPrecio4__precioProducto">$ '+lemaObtenido[7].price+'</p></div>'          
+                        +'</div> ';
+            div.innerHTML += '<div class="divProductosCategoria">'
+                            +'<div class="divImg1"><img class="divImg1__imagProductos" src="'+lemaObtenido[8].images[0].src+'" alt="'+lemaObtenido[8].name+'"></div>'
+                            +'<div class="divImg2"><img class="divImg2__imagProductos" src="'+lemaObtenido[9].images[0].src+'" alt="'+lemaObtenido[9].name+'"></div>'
+                            +'<div class="divImg3"><img class="divImg3__imagProductos" src="'+lemaObtenido[10].images[0].src+'" alt="'+lemaObtenido[10].name+'"></div>'
+                            +'<div class="divImg4"><img class="divImg4__imagProductos" src="'+lemaObtenido[11].images[0].src+'" alt="'+lemaObtenido[11].name+'"></div>'
+                            +'<div class="divTitulo1"><h2 class="divTitulo1__titProducto">'+lemaObtenido[8].name+'</h2></div>'
+                            +'<div class="divTitulo2"><h2 class="divTitulo2__titProducto">'+lemaObtenido[9].name+'</h2></div>'
+                            +'<div class="divTitulo3"><h2 class="divTitulo3__titProducto">'+lemaObtenido[10].name+'</h2></div>'
+                            +'<div class="divTitulo4"><h2 class="divTitulo4__titProducto">'+lemaObtenido[11].name+'</h2></div>'
+                            +'<div class="divDesc1"><p class="divDesc1__descProducto">'+lemaObtenido[8].short_description+'</p></div>'
+                            +'<div class="divDesc2"><p class="divDesc2__descProducto">'+lemaObtenido[9].short_description+'</p></div>'
+                            +'<div class="divDesc3"><p class="divDesc3__descProducto">'+lemaObtenido[10].short_description+'</p></div>'
+                            +'<div class="divDesc4"><p class="divDesc4__descProducto">'+lemaObtenido[11].short_description+'</p></div>'
+                            +'<div class="divPrecio1"><p class="divPrecio1__precioProducto">$ '+lemaObtenido[8].price+'</p></div>'
+                            +'<div class="divPrecio2"><p class="divPrecio2__precioProducto">$ '+lemaObtenido[9].price+'</p></div>'
+                            +'<div class="divPrecio3"><p class="divPrecio3__precioProducto">$ '+lemaObtenido[10].price+'</p></div>'  
+                            +'<div class="divPrecio4"><p class="divPrecio4__precioProducto">$ '+lemaObtenido[11].price+'</p></div>'       
+                        +'</div> ';                                                            
+                        return div;
+ 
+            
+      }
+      catch(e) {
+        console.error(`Ocurrió un error: ${e.message}`);
+      }
+    })();
+      </script>
