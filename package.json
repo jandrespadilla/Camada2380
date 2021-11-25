@@ -1,9 +1,10 @@
- {
+{
   "name": "mercaditochic_html",
   "version": "1.0.0",
   "description": "Proyecto en html de Mercadito Chic",
   "main": "index.js",
   "dependencies": {
+    "bootstrap": "^5.1.3",
     "node-sass": "^6.0.1",
     "nodemon": "^2.0.15"
   },

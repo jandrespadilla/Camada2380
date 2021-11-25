@@ -56,50 +56,52 @@
             <div class="divDescGourIndex"><p class="pDescriptivo">Aceite de Oliva Extra Virgen Saborizado Estilo Gourmet. Linea Clásica, Ajo, Laurel y Pimienta</p></div>
         </div> 
         <div class="container"> 
-            <div class="d-flex  justify-content-around ">
-                <div class="nav flex-column nav-pills  me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                  <button class="nav-link nav-secondary text-dark active" id="v-pills-gourmet-tab" data-bs-toggle="pill" data-bs-target="#v-pills-gourmet" type="button" role="tab" aria-controls="v-pills-gourmet" aria-selected="true">Mercadito Gourmet</button>
-                  <button class="nav-link text-dark" id="v-pills-deco-tab" data-bs-toggle="pill" data-bs-target="#v-pills-deco" type="button" role="tab" aria-controls="v-pills-deco" aria-selected="false">Mercadito Deco</button>
-                  <button class="nav-link text-dark" id="v-pills-eco-tab" data-bs-toggle="pill" data-bs-target="#v-pills-eco" type="button" role="tab" aria-controls="v-pills-eco" aria-selected="false">Mercadito EcoFriendly</button>
-                </div>
-                <div class="tab-content " id="v-pills-tabContent">
-                  <div class="tab-pane fade show active" id="v-pills-gourmet" role="tabpanel" aria-labelledby="v-pills-gourmet-tab">                   
-                       <div class="videosDiv">
-                    <div class="descVideosDiv">
-                        <span>Spot Promocional Show de Producto - Mate & CO.</span>
-                    </div>
-                    <div class="frameVideosDiv">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/MSdqHcCoBVY" title="Spot Promocional Show de Producto - Mate & CO." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </div></div>
-                  <div class="tab-pane fade" id="v-pills-deco" role="tabpanel" aria-labelledby="v-pills-deco-tab">
+              
+                <ul class="nav nav-tabs justify-content-center" id="videoTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="gourmet-tab" data-bs-toggle="tab" data-bs-target="#gourmet" type="button" role="tab" aria-controls="gourmet" aria-selected="false">Mercadito Gourmet</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="deco-tab" data-bs-toggle="tab" data-bs-target="#deco" type="button" role="tab" aria-controls="deco" aria-selected="true">Mercadito Deco</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="ecofriendly-tab" data-bs-toggle="tab" data-bs-target="#ecofriendly" type="button" role="tab" aria-controls="ecofriendly" aria-selected="false">Mercadito EcoFriendly</button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="videoTabContent">
+                  <div class="tab-pane fade" id="gourmet" role="tabpanel" aria-labelledby="gourmet-tab">
                     <div class="videosDiv">
-                        <div class="descVideosDiv">
-                            <span>COMO COMBINAR LOS COJINES CON LA DECORACIÓN</span>
-                        </div>
-                        <div class="frameVideosDiv"> 
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/j0tQYQlKbzM" title="COMO COMBINAR LOS COJINES CON LA DECORACIÓN" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div >
+                      <div class="descVideosDiv">
+                          <span>Spot Promocional Show de Producto - Mate & CO.</span>
+                      </div>
+                      <div class="frameVideosDiv">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/MSdqHcCoBVY" title="Spot Promocional Show de Producto - Mate & CO." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </div>
                   </div>
-                  <div class="tab-pane fade" id="v-pills-eco" role="tabpanel" aria-labelledby="v-pills-eco-tab">                    <div class="videosDiv">
-                            <div class="descVideosDiv">
-                                <span>COMO SER ECOFRIENDLY ? - 4 TIPS</span>
-                            </div>
-                            <div class="frameVideosDiv">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/9WLBfKb1Hg8" title="COMO SER ECOFRIENDLY ? - 4 TIPS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>    
-                        </div>
-                    </div>
+                  </div>
+                  <div class="tab-pane fade active show" id="deco" role="tabpanel" aria-labelledby="deco-tab">
+                    <div class="videosDiv">
+                      <div class="descVideosDiv">
+                          <span>COMO COMBINAR LOS COJINES CON LA DECORACIÓN</span>
+                      </div>
+                      <div class="frameVideosDiv"> 
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/j0tQYQlKbzM" title="COMO COMBINAR LOS COJINES CON LA DECORACIÓN" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </div>
+                  </div >
+                  </div>
+                  <div class="tab-pane fade" id="ecofriendly" role="tabpanel" aria-labelledby="ecofriendly-tab">
+                    <div class="videosDiv">
+                      <div class="descVideosDiv">
+                          <span>COMO SER ECOFRIENDLY ? - 4 TIPS</span>
+                      </div>
+                      <div class="frameVideosDiv">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/9WLBfKb1Hg8" title="COMO SER ECOFRIENDLY ? - 4 TIPS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </div>    
+                  </div>
+                  </div>
                 </div>
-              </div>
-
-
-                    
-
-                    
-
-        </div>
+               
+            </div>
     </main>
     <!-- Footer-->
     <div class="container-fluid footer">
