@@ -1,5 +1,7 @@
 @import './imports/variables';
 @import './imports/grid';
+
+$nav-link-color:rgb(88, 56, 56);
 *{
     margin: 0px;
     padding: 0px;
@@ -9,7 +11,7 @@
     position: sticky;
     top: 0px;
     z-index: 5;
-    height: 75px;
+    height: 80px;
     background-color: rgb(235, 204, 159);
     font-family: $fuentePrincipal;
     vertical-align: bottom
