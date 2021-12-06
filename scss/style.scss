@@ -89,15 +89,7 @@ $nav-link-color:rgb(88, 56, 56);
     font-size:$sizeTexto;
 }
 .footer{
-    background-color: lightgray;
-    z-index:99;
-    position:relative;
-    left:0;
-    right:0;
-    bottom:0;
-    top: calc( 37vh - 50px );
-    background:  linear-gradient(to top,rgb(235, 204, 159) , #ccc);
-    width: 100%;
+   margin-top: 5%;
 }
  .divMenuBotton{
     display: flex;
