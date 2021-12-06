@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -7565,7 +7566,16 @@ textarea.form-control-lg {
       text-align: justify; }
     .divProductosIndex .divDescGourIndex {
       grid-area: divDescGourIndex;
-      text-align: justify; } }
+      text-align: justify; }
+  .row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+    justify-content: space-around; } }
 
 @media only screen and (max-width: 767px) and (min-width: 321px) {
   .divProductosCategoria {
@@ -7993,7 +8003,8 @@ textarea.form-control-lg {
   font-size: 20px;
   padding: 10px;
   background-color: #ebcc9f;
-  vertical-align: bottom; }
+  vertical-align: bottom;
+  justify-content: flex-end; }
 
 .textDecoration__none {
   text-decoration: none; }

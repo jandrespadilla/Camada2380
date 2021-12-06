@@ -24,7 +24,8 @@ $nav-link-color:rgb(88, 56, 56);
     font-size: 20px;
     padding: 10px;
     background-color: rgb(235, 204, 159);
-    vertical-align: bottom
+    vertical-align: bottom;
+    justify-content:flex-end;
 }
 .textDecoration__none{
     text-decoration: none;
