@@ -2644,11 +2644,11 @@ textarea.form-control-lg {
     cursor: default; }
 
 .nav-tabs {
-  border-bottom: 0 solid #dee2e6; }
+  border-bottom: 1 solid #dee2e6; }
   .nav-tabs .nav-link {
-    margin-bottom: 0;
+    margin-bottom: -1;
     background: none;
-    border: 0 solid transparent;
+    border: 1 solid transparent;
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem; }
     .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
@@ -2664,7 +2664,7 @@ textarea.form-control-lg {
     background-color: #fff;
     border-color: #dee2e6 #dee2e6 #fff; }
   .nav-tabs .dropdown-menu {
-    margin-top: 0;
+    margin-top: -1;
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
 
