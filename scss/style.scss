@@ -118,13 +118,26 @@ $nav-link-color:rgb(88, 56, 56);
 }
 .articulo{
     text-align: center;
-    width: 50%;
+    width: 80%;
+    
     .articulo__titulo{
         color:rgb(88, 56, 56);
         font-size:$sizeSubTitulo;
+       
     }
+    .articulo__titulo a{
+            text-decoration: none;
+            color:rgb(88, 56, 56);
+    }    
     .articulo__cuerpo{
         align-content: center;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        width: 100%;
+        font-size:$sizeTexto;
+    }
+    .articulo__cuerpo p{
+        text-align: justify;
         margin-top: 30px;
         margin-bottom: 40px;
         width: 100%;
@@ -162,3 +175,4 @@ $nav-link-color:rgb(88, 56, 56);
     height: 120px;
     text-align: center;
 }
+.liFooter{list-style:none;}
