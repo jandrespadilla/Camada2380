@@ -53,9 +53,9 @@ $mediadBasicaCaja:720px;
 
 
 
-$sizeTitulo:xx-large;
-$sizeSubTitulo:x-large;
-$sizeTexto:large;
+$sizeTitulo:16 px;;
+$sizeSubTitulo:12 px;
+$sizeTexto:10 px;
 
 $varButtonBottom:(
     inicioBtn:btnInicio,
@@ -70,7 +70,7 @@ $varImgIndexProduct:(
     divImg3:divImgGourIndex,
 );
 $varTituloIndexProduct:(
-    divTitulo1: divTituloDecoIndex,
+    divTitulo1:divTituloDecoIndex,
     divTitulo2:divTituloSustIndex,
     divTitulo3:divTituloGourIndex,
 );
