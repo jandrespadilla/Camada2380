@@ -15,9 +15,14 @@
         @for $i from 1 to 5 {
             .divImg#{$i}{
                 grid-area: divImg#{$i};
+              
             }
             .divTitulo#{$i}{
                 grid-area: divTitulo#{$i};
+               
+                margin-left: 10%;
+                margin-right: 10%;
+                padding-top: -10px;
             }
             .divDesc#{$i}{
                 grid-area: divDesc#{$i};
@@ -25,6 +30,8 @@
             .divPrecio#{$i}{
                 grid-area: divPrecio#{$i};
                 margin-bottom: 30px;
+                margin-left: 10%;
+                margin-right: 10%;  
             }
         }      
     }
@@ -32,14 +39,16 @@
         .divImg#{$i}__imagProductos{
             width: 80%;
             text-align: center;
+            
         }    
         .divTitulo#{$i}__titProducto{
             margin-left: 10%;
             margin-right: 10%;
             text-align: center;
             color:$colorSubTitulo;
-            text-decoration-style: wavy;
-            font-size:$sizeSubTitulo;
+            font-weight: bold;
+            font-size:$sizeNombreProducto;
+            padding-top: 10%;
         }
         .divDesc#{$i}__descProducto{
             padding-left: 50px;
@@ -47,9 +56,11 @@
             font-size:$sizeTexto;
         }
         .divPrecio#{$i}__precioProducto{
-            padding-left: 50px;
-            padding-right: 50px;
-            font-size:$sizeTexto;
+       
+            font-size: $sizePrecioProducto;
+           
+            color: $colorSubTitulo;
+            padding-bottom: 2%;
         }     
     }   
     .footerDiv{
@@ -169,7 +180,7 @@
             margin-right: 10%;
             text-align: center;
             color:$colorSubTitulo;
-            font-size:$sizeSubTitulo;
+            font-size:$sizeNombreProducto;
         }
         .divDesc#{$i}__descProducto{
             padding-left: 50px;
@@ -180,6 +191,7 @@
             padding-left: 50px;
             padding-right: 50px;
             font-size:$sizeTexto;
+            background-color: rgb(88, 56, 56);
         }     
     }   
     .footerDiv{
@@ -307,7 +319,7 @@
             margin-right: 10%;
             text-align: center;
             color:$colorSubTitulo;
-            font-size:$sizeSubTitulo;
+            font-size:$sizeNombreProducto;
         }
         .divDesc#{$i}__descProducto{
             padding-left: 50px;

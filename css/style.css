@@ -14766,39 +14766,59 @@ textarea.form-control-lg {
     .divProductosCategoria .divImg1 {
       grid-area: divImg1; }
     .divProductosCategoria .divTitulo1 {
-      grid-area: divTitulo1; }
+      grid-area: divTitulo1;
+      margin-left: 10%;
+      margin-right: 10%;
+      padding-top: -10px; }
     .divProductosCategoria .divDesc1 {
       grid-area: divDesc1; }
     .divProductosCategoria .divPrecio1 {
       grid-area: divPrecio1;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      margin-left: 10%;
+      margin-right: 10%; }
     .divProductosCategoria .divImg2 {
       grid-area: divImg2; }
     .divProductosCategoria .divTitulo2 {
-      grid-area: divTitulo2; }
+      grid-area: divTitulo2;
+      margin-left: 10%;
+      margin-right: 10%;
+      padding-top: -10px; }
     .divProductosCategoria .divDesc2 {
       grid-area: divDesc2; }
     .divProductosCategoria .divPrecio2 {
       grid-area: divPrecio2;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      margin-left: 10%;
+      margin-right: 10%; }
     .divProductosCategoria .divImg3 {
       grid-area: divImg3; }
     .divProductosCategoria .divTitulo3 {
-      grid-area: divTitulo3; }
+      grid-area: divTitulo3;
+      margin-left: 10%;
+      margin-right: 10%;
+      padding-top: -10px; }
     .divProductosCategoria .divDesc3 {
       grid-area: divDesc3; }
     .divProductosCategoria .divPrecio3 {
       grid-area: divPrecio3;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      margin-left: 10%;
+      margin-right: 10%; }
     .divProductosCategoria .divImg4 {
       grid-area: divImg4; }
     .divProductosCategoria .divTitulo4 {
-      grid-area: divTitulo4; }
+      grid-area: divTitulo4;
+      margin-left: 10%;
+      margin-right: 10%;
+      padding-top: -10px; }
     .divProductosCategoria .divDesc4 {
       grid-area: divDesc4; }
     .divProductosCategoria .divPrecio4 {
       grid-area: divPrecio4;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      margin-left: 10%;
+      margin-right: 10%; }
   .divImg1__imagProductos {
     width: 80%;
     text-align: center; }
@@ -14807,16 +14827,17 @@ textarea.form-control-lg {
     margin-right: 10%;
     text-align: center;
     color: #583838;
-    text-decoration-style: wavy;
-    font-size: 12 px; }
+    font-weight: bold;
+    font-size: 13 px;
+    padding-top: 10%; }
   .divDesc1__descProducto {
     padding-left: 50px;
     padding-right: 50px;
     font-size: 10 px; }
   .divPrecio1__precioProducto {
-    padding-left: 50px;
-    padding-right: 50px;
-    font-size: 10 px; }
+    font-size: x-large;
+    color: #583838;
+    padding-bottom: 2%; }
   .divImg2__imagProductos {
     width: 80%;
     text-align: center; }
@@ -14825,16 +14846,17 @@ textarea.form-control-lg {
     margin-right: 10%;
     text-align: center;
     color: #583838;
-    text-decoration-style: wavy;
-    font-size: 12 px; }
+    font-weight: bold;
+    font-size: 13 px;
+    padding-top: 10%; }
   .divDesc2__descProducto {
     padding-left: 50px;
     padding-right: 50px;
     font-size: 10 px; }
   .divPrecio2__precioProducto {
-    padding-left: 50px;
-    padding-right: 50px;
-    font-size: 10 px; }
+    font-size: x-large;
+    color: #583838;
+    padding-bottom: 2%; }
   .divImg3__imagProductos {
     width: 80%;
     text-align: center; }
@@ -14843,16 +14865,17 @@ textarea.form-control-lg {
     margin-right: 10%;
     text-align: center;
     color: #583838;
-    text-decoration-style: wavy;
-    font-size: 12 px; }
+    font-weight: bold;
+    font-size: 13 px;
+    padding-top: 10%; }
   .divDesc3__descProducto {
     padding-left: 50px;
     padding-right: 50px;
     font-size: 10 px; }
   .divPrecio3__precioProducto {
-    padding-left: 50px;
-    padding-right: 50px;
-    font-size: 10 px; }
+    font-size: x-large;
+    color: #583838;
+    padding-bottom: 2%; }
   .divImg4__imagProductos {
     width: 80%;
     text-align: center; }
@@ -14861,16 +14884,17 @@ textarea.form-control-lg {
     margin-right: 10%;
     text-align: center;
     color: #583838;
-    text-decoration-style: wavy;
-    font-size: 12 px; }
+    font-weight: bold;
+    font-size: 13 px;
+    padding-top: 10%; }
   .divDesc4__descProducto {
     padding-left: 50px;
     padding-right: 50px;
     font-size: 10 px; }
   .divPrecio4__precioProducto {
-    padding-left: 50px;
-    padding-right: 50px;
-    font-size: 10 px; }
+    font-size: x-large;
+    color: #583838;
+    padding-bottom: 2%; }
   .footerDiv {
     display: grid;
     grid-template-areas: 'footerDiv__btnInicio footerDiv__btnAcerca footerDiv__btnContacto footerDiv__btnProducto';
@@ -15031,7 +15055,7 @@ textarea.form-control-lg {
     margin-right: 10%;
     text-align: center;
     color: #583838;
-    font-size: 12 px; }
+    font-size: 13 px; }
   .divDesc1__descProducto {
     padding-left: 50px;
     padding-right: 50px;
@@ -15039,7 +15063,8 @@ textarea.form-control-lg {
   .divPrecio1__precioProducto {
     padding-left: 50px;
     padding-right: 50px;
-    font-size: 10 px; }
+    font-size: 10 px;
+    background-color: #583838; }
   .divImg2__imagProductos {
     width: 80%;
     text-align: center; }
@@ -15048,7 +15073,7 @@ textarea.form-control-lg {
     margin-right: 10%;
     text-align: center;
     color: #583838;
-    font-size: 12 px; }
+    font-size: 13 px; }
   .divDesc2__descProducto {
     padding-left: 50px;
     padding-right: 50px;
@@ -15056,7 +15081,8 @@ textarea.form-control-lg {
   .divPrecio2__precioProducto {
     padding-left: 50px;
     padding-right: 50px;
-    font-size: 10 px; }
+    font-size: 10 px;
+    background-color: #583838; }
   .divImg3__imagProductos {
     width: 80%;
     text-align: center; }
@@ -15065,7 +15091,7 @@ textarea.form-control-lg {
     margin-right: 10%;
     text-align: center;
     color: #583838;
-    font-size: 12 px; }
+    font-size: 13 px; }
   .divDesc3__descProducto {
     padding-left: 50px;
     padding-right: 50px;
@@ -15073,7 +15099,8 @@ textarea.form-control-lg {
   .divPrecio3__precioProducto {
     padding-left: 50px;
     padding-right: 50px;
-    font-size: 10 px; }
+    font-size: 10 px;
+    background-color: #583838; }
   .divImg4__imagProductos {
     width: 80%;
     text-align: center; }
@@ -15082,7 +15109,7 @@ textarea.form-control-lg {
     margin-right: 10%;
     text-align: center;
     color: #583838;
-    font-size: 12 px; }
+    font-size: 13 px; }
   .divDesc4__descProducto {
     padding-left: 50px;
     padding-right: 50px;
@@ -15090,7 +15117,8 @@ textarea.form-control-lg {
   .divPrecio4__precioProducto {
     padding-left: 50px;
     padding-right: 50px;
-    font-size: 10 px; }
+    font-size: 10 px;
+    background-color: #583838; }
   .footerDiv {
     display: grid;
     grid-template-areas: 'footerDiv__btnInicio' 'footerDiv__btnAcerca' 'footerDiv__btnContacto' 'footerDiv__btnProducto';
@@ -15247,7 +15275,7 @@ textarea.form-control-lg {
     margin-right: 10%;
     text-align: center;
     color: #583838;
-    font-size: 12 px; }
+    font-size: 13 px; }
   .divDesc1__descProducto {
     padding-left: 50px;
     padding-right: 50px;
@@ -15264,7 +15292,7 @@ textarea.form-control-lg {
     margin-right: 10%;
     text-align: center;
     color: #583838;
-    font-size: 12 px; }
+    font-size: 13 px; }
   .divDesc2__descProducto {
     padding-left: 50px;
     padding-right: 50px;
@@ -15281,7 +15309,7 @@ textarea.form-control-lg {
     margin-right: 10%;
     text-align: center;
     color: #583838;
-    font-size: 12 px; }
+    font-size: 13 px; }
   .divDesc3__descProducto {
     padding-left: 50px;
     padding-right: 50px;
@@ -15298,7 +15326,7 @@ textarea.form-control-lg {
     margin-right: 10%;
     text-align: center;
     color: #583838;
-    font-size: 12 px; }
+    font-size: 13 px; }
   .divDesc4__descProducto {
     padding-left: 50px;
     padding-right: 50px;
