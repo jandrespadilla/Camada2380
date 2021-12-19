@@ -14803,8 +14803,11 @@ textarea.form-control-lg {
     width: 80%;
     text-align: center; }
   .divTitulo1__titProducto {
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: center;
     color: #583838;
+    text-decoration-style: wavy;
     font-size: 12 px; }
   .divDesc1__descProducto {
     padding-left: 50px;
@@ -14818,8 +14821,11 @@ textarea.form-control-lg {
     width: 80%;
     text-align: center; }
   .divTitulo2__titProducto {
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: center;
     color: #583838;
+    text-decoration-style: wavy;
     font-size: 12 px; }
   .divDesc2__descProducto {
     padding-left: 50px;
@@ -14833,8 +14839,11 @@ textarea.form-control-lg {
     width: 80%;
     text-align: center; }
   .divTitulo3__titProducto {
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: center;
     color: #583838;
+    text-decoration-style: wavy;
     font-size: 12 px; }
   .divDesc3__descProducto {
     padding-left: 50px;
@@ -14848,8 +14857,11 @@ textarea.form-control-lg {
     width: 80%;
     text-align: center; }
   .divTitulo4__titProducto {
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: center;
     color: #583838;
+    text-decoration-style: wavy;
     font-size: 12 px; }
   .divDesc4__descProducto {
     padding-left: 50px;
@@ -14931,17 +14943,17 @@ textarea.form-control-lg {
       grid-area: divImgGourIndex; }
     .divProductosIndex .divTituloDecoIndex {
       grid-area: divTituloDecoIndex;
-      margin: 3%;
+      margin: 5%;
       text-align: justify;
       margin-bottom: 10px; }
     .divProductosIndex .divTituloSustIndex {
       grid-area: divTituloSustIndex;
-      margin: 3%;
+      margin: 5%;
       text-align: justify;
       margin-bottom: 10px; }
     .divProductosIndex .divTituloGourIndex {
       grid-area: divTituloGourIndex;
-      margin: 3%;
+      margin: 5%;
       text-align: justify;
       margin-bottom: 10px; }
     .divProductosIndex .divDescDecoIndex {
@@ -15015,6 +15027,8 @@ textarea.form-control-lg {
     width: 80%;
     text-align: center; }
   .divTitulo1__titProducto {
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: center;
     color: #583838;
     font-size: 12 px; }
@@ -15030,6 +15044,8 @@ textarea.form-control-lg {
     width: 80%;
     text-align: center; }
   .divTitulo2__titProducto {
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: center;
     color: #583838;
     font-size: 12 px; }
@@ -15045,6 +15061,8 @@ textarea.form-control-lg {
     width: 80%;
     text-align: center; }
   .divTitulo3__titProducto {
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: center;
     color: #583838;
     font-size: 12 px; }
@@ -15060,6 +15078,8 @@ textarea.form-control-lg {
     width: 80%;
     text-align: center; }
   .divTitulo4__titProducto {
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: center;
     color: #583838;
     font-size: 12 px; }
@@ -15223,6 +15243,8 @@ textarea.form-control-lg {
     width: 80%;
     text-align: center; }
   .divTitulo1__titProducto {
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: center;
     color: #583838;
     font-size: 12 px; }
@@ -15238,6 +15260,8 @@ textarea.form-control-lg {
     width: 80%;
     text-align: center; }
   .divTitulo2__titProducto {
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: center;
     color: #583838;
     font-size: 12 px; }
@@ -15253,6 +15277,8 @@ textarea.form-control-lg {
     width: 80%;
     text-align: center; }
   .divTitulo3__titProducto {
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: center;
     color: #583838;
     font-size: 12 px; }
@@ -15268,6 +15294,8 @@ textarea.form-control-lg {
     width: 80%;
     text-align: center; }
   .divTitulo4__titProducto {
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: center;
     color: #583838;
     font-size: 12 px; }
