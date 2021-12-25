@@ -167,6 +167,8 @@
             .divPrecio#{$i}{
                 grid-area: divPrecio#{$i};
                 margin-bottom: 30px;
+                margin-left: 10%;
+                margin-right: 10%;  
             }
         }  
     }
@@ -188,10 +190,10 @@
             font-size:$sizeTexto;
         }
         .divPrecio#{$i}__precioProducto{
-            padding-left: 50px;
-            padding-right: 50px;
-            font-size:$sizeTexto;
-            background-color: rgb(88, 56, 56);
+            font-size: $sizePrecioProducto;
+           
+            color: $colorSubTitulo;
+            padding-bottom: 2%;
         }     
     }   
     .footerDiv{
@@ -306,6 +308,8 @@
             .divPrecio#{$i}{
                 grid-area: divPrecio#{$i};
                 margin-bottom: 30px;
+                margin-left: 10%;
+                margin-right: 10%;  
             }
         }  
     }
@@ -327,9 +331,10 @@
             font-size:$sizeTexto;
         }
         .divPrecio#{$i}__precioProducto{
-            padding-left: 50px;
-            padding-right: 50px;
-            font-size:$sizeTexto;
+            font-size: $sizePrecioProducto;
+           
+            color: $colorSubTitulo;
+            padding-bottom: 2%;
         }     
     }  
     .footerDiv{

@@ -15019,7 +15019,9 @@ textarea.form-control-lg {
       grid-area: divDesc1; }
     .divProductosCategoria .divPrecio1 {
       grid-area: divPrecio1;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      margin-left: 10%;
+      margin-right: 10%; }
     .divProductosCategoria .divImg2 {
       grid-area: divImg2; }
     .divProductosCategoria .divTitulo2 {
@@ -15028,7 +15030,9 @@ textarea.form-control-lg {
       grid-area: divDesc2; }
     .divProductosCategoria .divPrecio2 {
       grid-area: divPrecio2;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      margin-left: 10%;
+      margin-right: 10%; }
     .divProductosCategoria .divImg3 {
       grid-area: divImg3; }
     .divProductosCategoria .divTitulo3 {
@@ -15037,7 +15041,9 @@ textarea.form-control-lg {
       grid-area: divDesc3; }
     .divProductosCategoria .divPrecio3 {
       grid-area: divPrecio3;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      margin-left: 10%;
+      margin-right: 10%; }
     .divProductosCategoria .divImg4 {
       grid-area: divImg4; }
     .divProductosCategoria .divTitulo4 {
@@ -15046,7 +15052,9 @@ textarea.form-control-lg {
       grid-area: divDesc4; }
     .divProductosCategoria .divPrecio4 {
       grid-area: divPrecio4;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      margin-left: 10%;
+      margin-right: 10%; }
   .divImg1__imagProductos {
     width: 80%;
     text-align: center; }
@@ -15061,10 +15069,9 @@ textarea.form-control-lg {
     padding-right: 50px;
     font-size: 10 px; }
   .divPrecio1__precioProducto {
-    padding-left: 50px;
-    padding-right: 50px;
-    font-size: 10 px;
-    background-color: #583838; }
+    font-size: x-large;
+    color: #583838;
+    padding-bottom: 2%; }
   .divImg2__imagProductos {
     width: 80%;
     text-align: center; }
@@ -15079,10 +15086,9 @@ textarea.form-control-lg {
     padding-right: 50px;
     font-size: 10 px; }
   .divPrecio2__precioProducto {
-    padding-left: 50px;
-    padding-right: 50px;
-    font-size: 10 px;
-    background-color: #583838; }
+    font-size: x-large;
+    color: #583838;
+    padding-bottom: 2%; }
   .divImg3__imagProductos {
     width: 80%;
     text-align: center; }
@@ -15097,10 +15103,9 @@ textarea.form-control-lg {
     padding-right: 50px;
     font-size: 10 px; }
   .divPrecio3__precioProducto {
-    padding-left: 50px;
-    padding-right: 50px;
-    font-size: 10 px;
-    background-color: #583838; }
+    font-size: x-large;
+    color: #583838;
+    padding-bottom: 2%; }
   .divImg4__imagProductos {
     width: 80%;
     text-align: center; }
@@ -15115,10 +15120,9 @@ textarea.form-control-lg {
     padding-right: 50px;
     font-size: 10 px; }
   .divPrecio4__precioProducto {
-    padding-left: 50px;
-    padding-right: 50px;
-    font-size: 10 px;
-    background-color: #583838; }
+    font-size: x-large;
+    color: #583838;
+    padding-bottom: 2%; }
   .footerDiv {
     display: grid;
     grid-template-areas: 'footerDiv__btnInicio' 'footerDiv__btnAcerca' 'footerDiv__btnContacto' 'footerDiv__btnProducto';
@@ -15239,7 +15243,9 @@ textarea.form-control-lg {
       grid-area: divDesc1; }
     .divProductosCategoria .divPrecio1 {
       grid-area: divPrecio1;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      margin-left: 10%;
+      margin-right: 10%; }
     .divProductosCategoria .divImg2 {
       grid-area: divImg2; }
     .divProductosCategoria .divTitulo2 {
@@ -15248,7 +15254,9 @@ textarea.form-control-lg {
       grid-area: divDesc2; }
     .divProductosCategoria .divPrecio2 {
       grid-area: divPrecio2;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      margin-left: 10%;
+      margin-right: 10%; }
     .divProductosCategoria .divImg3 {
       grid-area: divImg3; }
     .divProductosCategoria .divTitulo3 {
@@ -15257,7 +15265,9 @@ textarea.form-control-lg {
       grid-area: divDesc3; }
     .divProductosCategoria .divPrecio3 {
       grid-area: divPrecio3;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      margin-left: 10%;
+      margin-right: 10%; }
     .divProductosCategoria .divImg4 {
       grid-area: divImg4; }
     .divProductosCategoria .divTitulo4 {
@@ -15266,7 +15276,9 @@ textarea.form-control-lg {
       grid-area: divDesc4; }
     .divProductosCategoria .divPrecio4 {
       grid-area: divPrecio4;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      margin-left: 10%;
+      margin-right: 10%; }
   .divImg1__imagProductos {
     width: 80%;
     text-align: center; }
@@ -15281,9 +15293,9 @@ textarea.form-control-lg {
     padding-right: 50px;
     font-size: 10 px; }
   .divPrecio1__precioProducto {
-    padding-left: 50px;
-    padding-right: 50px;
-    font-size: 10 px; }
+    font-size: x-large;
+    color: #583838;
+    padding-bottom: 2%; }
   .divImg2__imagProductos {
     width: 80%;
     text-align: center; }
@@ -15298,9 +15310,9 @@ textarea.form-control-lg {
     padding-right: 50px;
     font-size: 10 px; }
   .divPrecio2__precioProducto {
-    padding-left: 50px;
-    padding-right: 50px;
-    font-size: 10 px; }
+    font-size: x-large;
+    color: #583838;
+    padding-bottom: 2%; }
   .divImg3__imagProductos {
     width: 80%;
     text-align: center; }
@@ -15315,9 +15327,9 @@ textarea.form-control-lg {
     padding-right: 50px;
     font-size: 10 px; }
   .divPrecio3__precioProducto {
-    padding-left: 50px;
-    padding-right: 50px;
-    font-size: 10 px; }
+    font-size: x-large;
+    color: #583838;
+    padding-bottom: 2%; }
   .divImg4__imagProductos {
     width: 80%;
     text-align: center; }
@@ -15332,9 +15344,9 @@ textarea.form-control-lg {
     padding-right: 50px;
     font-size: 10 px; }
   .divPrecio4__precioProducto {
-    padding-left: 50px;
-    padding-right: 50px;
-    font-size: 10 px; }
+    font-size: x-large;
+    color: #583838;
+    padding-bottom: 2%; }
   .footerDiv {
     display: grid;
     grid-template-areas: 'footerDiv__btnInicio' 'footerDiv__btnAcerca' 'footerDiv__btnContacto' 'footerDiv__btnProducto';
