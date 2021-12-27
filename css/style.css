@@ -14895,6 +14895,36 @@ textarea.form-control-lg {
     font-size: x-large;
     color: #583838;
     padding-bottom: 2%; }
+  .divImg1__imagIndex {
+    width: 80%;
+    text-align: center; }
+  .divTitulo1__titIndex {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    color: #583838;
+    font-weight: bold;
+    font-size: 18px; }
+  .divImg2__imagIndex {
+    width: 80%;
+    text-align: center; }
+  .divTitulo2__titIndex {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    color: #583838;
+    font-weight: bold;
+    font-size: 18px; }
+  .divImg3__imagIndex {
+    width: 80%;
+    text-align: center; }
+  .divTitulo3__titIndex {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    color: #583838;
+    font-weight: bold;
+    font-size: 18px; }
   .footerDiv {
     display: grid;
     grid-template-areas: 'footerDiv__btnInicio footerDiv__btnAcerca footerDiv__btnContacto footerDiv__btnProducto';
@@ -15000,7 +15030,9 @@ textarea.form-control-lg {
     justify-content: space-around; }
   .frameVideos {
     width: 70%;
-    height: 480px; } }
+    height: 480px; }
+  .footer {
+    margin-top: 5%; } }
 
 @media only screen and (max-width: 767px) and (min-width: 321px) {
   .divProductosCategoria {
@@ -15123,6 +15155,39 @@ textarea.form-control-lg {
     font-size: x-large;
     color: #583838;
     padding-bottom: 2%; }
+  .divImg1__imagIndex {
+    width: 80%;
+    text-align: center; }
+  .divTitulo1__titIndex {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    color: #583838;
+    font-weight: bold;
+    font-size: 13 px;
+    padding-top: 10%; }
+  .divImg2__imagIndex {
+    width: 80%;
+    text-align: center; }
+  .divTitulo2__titIndex {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    color: #583838;
+    font-weight: bold;
+    font-size: 13 px;
+    padding-top: 10%; }
+  .divImg3__imagIndex {
+    width: 80%;
+    text-align: center; }
+  .divTitulo3__titIndex {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    color: #583838;
+    font-weight: bold;
+    font-size: 13 px;
+    padding-top: 10%; }
   .footerDiv {
     display: grid;
     grid-template-areas: 'footerDiv__btnInicio' 'footerDiv__btnAcerca' 'footerDiv__btnContacto' 'footerDiv__btnProducto';
@@ -15224,7 +15289,10 @@ textarea.form-control-lg {
       text-align: justify; }
   .frameVideos {
     width: 70%;
-    height: 240px; } }
+    height: 240px; }
+  .footer {
+    margin-top: 5%;
+    margin-left: 15%; } }
 
 @media only screen and (max-width: 320px) {
   .divProductosCategoria {
@@ -15347,6 +15415,39 @@ textarea.form-control-lg {
     font-size: x-large;
     color: #583838;
     padding-bottom: 2%; }
+  .divImg1__imagIndex {
+    width: 80%;
+    text-align: center; }
+  .divTitulo1__titIndex {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    color: #583838;
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 10%; }
+  .divImg2__imagIndex {
+    width: 80%;
+    text-align: center; }
+  .divTitulo2__titIndex {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    color: #583838;
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 10%; }
+  .divImg3__imagIndex {
+    width: 80%;
+    text-align: center; }
+  .divTitulo3__titIndex {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    color: #583838;
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 10%; }
   .footerDiv {
     display: grid;
     grid-template-areas: 'footerDiv__btnInicio' 'footerDiv__btnAcerca' 'footerDiv__btnContacto' 'footerDiv__btnProducto';
@@ -15442,7 +15543,10 @@ textarea.form-control-lg {
       text-align: justify; }
     .divProductosIndex .divDescGourIndex {
       grid-area: divDescGourIndex;
-      text-align: justify; } }
+      text-align: justify; }
+  .footer {
+    margin-top: 5%;
+    margin-left: 5%; } }
 
 * {
   margin: 0px;
@@ -15526,9 +15630,6 @@ textarea.form-control-lg {
   padding-bottom: 50px;
   font-size: 10 px; }
 
-.footer {
-  margin-top: 5%; }
-
 .divMenuBotton {
   display: flex;
   height: 70px;
@@ -15605,3 +15706,13 @@ textarea.form-control-lg {
 
 .liFooter {
   list-style: none; }
+
+.margenNotiFooter {
+  margin-left: 5%; }
+
+.sizeTextSend {
+  max-width: 260px; }
+
+.sizeButtonSend {
+  width: 40px;
+  margin-left: 1.5%; }

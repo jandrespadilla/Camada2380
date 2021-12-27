@@ -88,9 +88,7 @@ $nav-link-color:rgb(88, 56, 56);
     padding-bottom: 50px;
     font-size:$sizeTexto;
 }
-.footer{
-   margin-top: 5%;
-}
+
  .divMenuBotton{
     display: flex;
     height: 70px;
@@ -176,3 +174,7 @@ $nav-link-color:rgb(88, 56, 56);
     text-align: center;
 }
 .liFooter{list-style:none;}
+
+.margenNotiFooter{margin-left: 5%;}
+.sizeTextSend{max-width: 260px;}
+.sizeButtonSend{width: 40px;margin-left: 1.5%;}
